@@ -1,0 +1,66 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(45deg, aqua, lightgreen);
+  padding: 2rem;
+}
+
+.todo {
+  width: 100%;
+  max-width: 50vw;
+  background-color: white;
+  margin: 10rem auto 2rem;
+  padding: 4rem 3rem 7rem;
+  border-radius: 1rem;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: lightgray;
+  border-radius: 3rem;
+  padding-left: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 1rem 5rem;
+  background: lightcoral;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4rem;
+}
+
+ul li {
+  list-style: none;
+  font-size: 1rem;
+  padding: 0.5rem 2rem;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+
+ul li::before {
+  content: '';
+  position: absolute;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  background-image: url(../unchecked.svg);
+  background-size: cover;
+  top: 0.2rem;
+  left: 0;
+}
