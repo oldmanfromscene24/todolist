@@ -1,0 +1,1 @@
+Credits to https://www.youtube.com/@GreatStackDev for main ideas
